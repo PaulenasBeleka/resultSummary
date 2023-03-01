@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Results summary component</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div id="container">
+  
+
+  <div id="left">
+
+  <h4 id="result">Your Result</h4>
+
+  <div id="resultContainer">
+  <div id="numbers">
+  <h2 id="resultnum">76</h2>
+  <p id="maxResult">of 100</p>
+  </div>
+</div>
+
+<h3 id="great">Great</h3>
+<p>You scored higher than 65% of the people who have taken these tests.</p>
+  </div>
+
+
+  <div id="right">
+
+  <h4 id="summary">Summary</h4>
+
+  <div id="reaction" class="row">
+    <p class="text">Reaction</p>
+    <div class="rightp">
+    <p class="points" id="reaction-output">80</p>
+    <p class="pointsmax"> / 100</p>
+    
+  </div>
+  </div>
+<div id="memory" class="row">
+  <p class="text">Memory</p>
+
+  <div class="rightp">
+  <p class="points">92 </p>
+  <p class="pointsmax"> / 100</p>
+
+</div>
+</div>
+
+<div id="verbal" class="row">
+  <p class="text">Verbal</p>
+
+  <div class="rightp">
+  <p class="points">61 </p>
+  <p class="pointsmax"> / 100</p>
+
+</div>
+</div>
+
+<div id="visual" class="row">
+  <p class="text">Visual</p>
+
+  <div class="rightp">
+  <p class="points">72 </p>
+  <p class="pointsmax"> / 100</p>
+</div>
+</div>
+
+<button id="continue" class="btn-block" onclick="mygtukas()">Continue</button>
+
+
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

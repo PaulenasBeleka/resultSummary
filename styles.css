@@ -1,0 +1,140 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+body{
+    background-color: aliceblue;
+}
+
+#container{
+    background-color: white;
+}
+
+#left, #right{
+    padding: 10px;
+}
+
+#left{
+    color: white;
+    background: linear-gradient(0deg, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    text-align: center;
+    padding: 25px 10px;
+    
+}
+
+#right{
+    padding: 25px 30px;
+    background-color: white;
+}
+
+#result{
+    opacity: 0.6;
+}
+#resultContainer{
+    background: linear-gradient(180deg, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    border-radius: 50%;
+    height:100px;
+    width:100px;
+    margin: 10px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+#resultnum{
+    font-size: 3rem;
+}
+#maxResult{
+    opacity: 0.4;
+}
+
+#left > p{
+    max-width: 250px;
+    margin: 15px auto;
+    font-weight: 500;
+    font-size: 0.8rem;
+    opacity: 0.8;
+}
+
+h3{
+    padding-top: 20px;
+}
+
+.text, .points, .pointsmax{
+    display: inline-block;
+}
+
+#summary{
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+h4{
+    font-size: 1.1rem;
+}
+.row{
+    display:flex;
+    justify-content: space-between;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    padding: 10px 15px;
+}
+#reaction{
+background-color: hsla(0, 100%, 67%, 0.2);
+color: hsl(0, 100%, 67%);
+}
+#memory{
+background-color: hsla(39, 100%, 56%, 0.2);
+color: hsl(39, 100%, 56%);
+}
+#verbal{
+background-color: hsla(166, 100%, 37%, 0.2);
+color: hsl(166, 100%, 37%);
+}
+#visual{
+background-color: hsla(234, 85%, 45%, 0.2);
+color: hsl(234, 85%, 45%);
+}
+
+#continue{
+    text-align: center;
+    width: 100%;
+    display: block;
+    border-radius: 42px;
+    background-color: #303b59;
+    border: none;
+    color: white;
+    height:40px
+}
+
+#continue:hover{
+    scale: 1.01;
+    opacity: 0.95;
+    cursor: pointer;
+}
+
+@media (min-width:546px){
+    #container{
+
+        display:flex;
+        margin:50px auto 20px;
+        border-radius: 20px;
+        overflow: hidden;
+        max-width: 600px;
+    }
+    #left{
+        border-radius: 20px;
+        min-height: 300px;
+    }
+    #right{
+        /* border-radius: 20px; */
+    }
+    #container, #right, #left{
+    }
+    #right, #left{
+        flex:1;
+    }
+}
